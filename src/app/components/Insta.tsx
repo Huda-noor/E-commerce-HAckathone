@@ -2,22 +2,27 @@ import Image from 'next/image'
 import React from 'react'
 import UnderlineButton from '../ui/underline-button'
 
+
 function Insta() {
   return (
-    <div className='wrapper h-[450px]  top-[4052px]'>
-       <Image
-       src="/back.jpg"
-       height={450}
-       width={1440} 
-       className='opacity-[15%] mt-[16px]' 
-       alt='back'/>
-      <div className='flex items-center justify-between'>
-         <h1 className='font-extrabold text-[50px]'>Instagram</h1>
-         <p>Follow our store on Instagram</p>
-         <UnderlineButton>Follow Us</UnderlineButton>
+    <div className="wrapper relative h-[450px] flex items-center justify-center">
+      {/* Background Image */}
+      <Image
+        src="/back.jpg"
+        layout="fill" // This makes the image cover the parent div
+        objectFit="cover" // Ensures the image scales properly
+        className="opacity-15"
+        alt="back"
+      />
+      
+      {/* Centered Content */}
+      <div className="absolute text-center font-poppins text-black">
+        <h1 className="font-extrabold text-[50px]">Our Instagram</h1>
+        <p className="mt-4 text-lg">Follow our store on Instagram</p>
+        <UnderlineButton className="mt-6 absolute w-[255px] h-[64px] top-[4314] left-20 rounded-3xl shadow-slate-500 bg-[#FAF4F4]">Follow Us</UnderlineButton>
       </div>
     </div>
-  )
+  );
 }
 
-export default Insta
+export default Insta;

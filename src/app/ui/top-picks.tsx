@@ -1,26 +1,39 @@
-
 import Image from "next/image";
 import React from "react";
 
 interface TopPicksCardProps {
-  img?: string; // Optional prop for image
+  img?: string;
+  description?: string;
+  price?: string;
+  isSelected?: boolean; // Is the card selected?
+  onSelect?: () => void; // Function to handle card selection
 }
 
-const TopPicksCard: React.FC<TopPicksCardProps> = ({ img }) => {
-  const defaultImg = '/default-image.jpg'; // Replace with your actual default image path in the public folder
+const TopPicksCard: React.FC<TopPicksCardProps> = ({
+  img,
+  description = "Default product description",
+  price = "Rs. 25,000.00",
+  isSelected = false,
+  onSelect,
+}) => {
+  const defaultImg = "/default-image.jpg";
 
   return (
-    <div>
+    <div
+      onClick={onSelect}
+      className={`border rounded-lg p-4 shadow-md cursor-pointer transition-transform duration-300 transform 
+      ${isSelected ? "border-blue-500 shadow-xl scale-105" : "hover:scale-105 hover:shadow-lg"}`}
+    >
       <Image
-        src={img || defaultImg} // Use provided img or default image
-        alt="Granite dining table with dining chair"
+        src={img || defaultImg}
+        alt={description}
         height={200}
         width={280}
-        className=""
+        className="rounded-md"
       />
-      <div className="mt-5 space-y-3">
-        <p className="text-lg leading-none">Granite dining table with dining chair</p>
-        <h4 className="font-semibold text-2xl">Rs. 25,000.00</h4>
+      <div className="mt-5 space-y-3 ">
+        <p className="text-lg leading-snug text-gray-700">{description}</p>
+        <h4 className="font-semibold text-2xl text-gray-900">{price}</h4>
       </div>
     </div>
   );
