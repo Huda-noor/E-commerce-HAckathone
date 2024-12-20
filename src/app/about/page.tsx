@@ -1,4 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
+import Header from "../components/Nav";
+import Features from "../components/Feature";
 
 
 const testimonials = [
@@ -6,26 +9,53 @@ const testimonials = [
     name: "Sarah Khan",
     review:
       "Absolutely love the quality of the furniture! It perfectly complements my living room. Highly recommend.",
-    image: "/images/user1.jpg",
   },
   {
     name: "Ali Raza",
     review:
       "Great customer service and timely delivery. I’m very satisfied with my purchase.",
-    image: "/images/user2.jpg",
+    
   },
   {
     name: "Maria Ahmed",
     review:
       "The designs are modern and durable. This is my second time shopping here, and I’m never disappointed.",
-    image: "/images/user3.jpg",
+   
   },
 ];
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="container mx-auto px-6 py-10 space-y-12">
+    <div className="wrapper container mx-auto px-6 py-10 space-y-12">
+      {/* Hero Section */}  <Header />
       {/* Hero Section */}
+      <div className="relative h-[316px] flex items-center justify-center bg-[#FAF4F4]">
+        {/* Background Image */}
+        <Image
+          src="/shop-bg.jpg"
+          layout="fill" // Makes the image cover the parent div
+          objectFit="cover" // Ensures the image scales properly
+          className="opacity-[50%]"
+          alt="Background"
+        />
+
+        {/* Centered Content */}
+        <div className="absolute text-center font-poppins text-black">
+           <div>
+            <Image src="/bglogo.png" width={100} height={100} alt="Logo" className='ml-16' /></div>
+              <h1 className="font-extrabold text-[50px] mb-4">About</h1>
+              <Link href="/" className="flex ml-14">
+            
+                    Home <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+               <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                      </svg>About
+
+        
+             
+           
+          </Link>
+        </div>
+      </div>
       <section className="text-center bg-yellow-100 p-10 rounded-lg shadow-md">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">
           Welcome to Our Store
@@ -59,14 +89,11 @@ const AboutPage: React.FC = () => {
               key={index}
               className="p-6 bg-white rounded-lg shadow-lg text-center"
             >
-              <img
-                src={testimonial.image}
-                alt={testimonial.name}
-                className="w-16 h-16 mx-auto rounded-full mb-4"
-              />
-              <p className="text-gray-700 italic mb-2">
-                "{testimonial.review}"
-              </p>
+             
+             <p className="text-gray-700 italic mb-2">
+                 &quot;{testimonial.review}&quot;
+                 </p>
+
               <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
             </div>
           ))}
@@ -90,6 +117,10 @@ const AboutPage: React.FC = () => {
           </button>
         </Link>
       </section>
+      <div>
+        <Features />
+      </div>
+     
     </div>
   );
 };

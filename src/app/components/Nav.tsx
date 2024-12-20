@@ -6,7 +6,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <header className="wrapper bg-white px-6 py-4 md:px-16">
+    <header className="wrapper sticky bg-white px-6 py-4 md:px-16">
       <div className="flex items-center justify-between">
         {/* Logo Section */}
         <div>
