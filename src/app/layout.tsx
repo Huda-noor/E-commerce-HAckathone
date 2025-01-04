@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+import { CartProvider } from "./ui/CartContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}
+      <body className={poppins.className}>
+        <CartProvider>{children}</CartProvider>np 
         <Footer/>
       </body>
     </html>
