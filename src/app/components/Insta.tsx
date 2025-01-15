@@ -17,7 +17,7 @@ function Insta() {
       
       {/* Centered Content */}
       <div className="absolute text-center font-poppins text-black">
-        <h1 className="font-extrabold text-[50px]">Our Instagram</h1>
+        <h1 className="font-extrabold text-3xl md:text-5xl">Our Instagram</h1>
         <p className="mt-4 text-lg">Follow our store on Instagram</p>
         <UnderlineButton className="mt-6 absolute w-[255px] h-[64px] top-[4314] left-20 rounded-3xl shadow-slate-500 bg-[#FAF4F4]">Follow Us</UnderlineButton>
       </div>

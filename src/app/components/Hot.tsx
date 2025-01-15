@@ -4,7 +4,7 @@ import UnderlineButton from '../ui/underline-button'
 
 function Hot() {
   return (
-    <div className='wrapper flex items-center w-full bg-[#FFF9E5] px-16 py-16 justify-between'>
+    <div className='wrapper flex items-center w-full bg-[#FFF9E5] px-4 md:px-16 py-16 justify-between'>
       <div>
       <Image
           src={"/8..png"}

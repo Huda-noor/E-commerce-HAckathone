@@ -3,7 +3,7 @@ import SideTableCard from '../ui/side-table'
 
 function Side() {
   return (
-    <div className='wrapper px-20 flex bg-[#FAF4F4] items-center justify-between'>
+    <div className='wrapper px-4 md:px-20 flex flex-col md:flex-row bg-[#FAF4F4] items-center justify-between'>
       <div className='container'>
         <SideTableCard 
         img='/2..png'

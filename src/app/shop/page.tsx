@@ -29,7 +29,7 @@ function Shop() {
         <div className="absolute text-center font-poppins text-black">
            <div>
             <Image src="/bglogo.png" width={100} height={100} alt="Logo" className='ml-16' /></div>
-              <h1 className="font-extrabold text-[50px] mb-4">Shop</h1>
+              <h1 className="font-extrabold text-3xl md:text-5xl mb-4">Shop</h1>
               <Link href="/" className="flex ml-14">
             
                     Home <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
