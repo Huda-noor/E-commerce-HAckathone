@@ -68,8 +68,14 @@ const CartItem: React.FC = () => {
           <h2 className="text-xl font-bold mb-4">
             Total: Rs. {calculateTotal().toLocaleString()}
           </h2>
+<<<<<<< HEAD
           <CheckoutButton />
            
+=======
+          <button className="w-full bg-black text-white py-2 rounded hover:bg-gray-800">
+            Proceed to Checkout
+          </button>
+>>>>>>> 1945779e04fb7ccd7a96b89393c72966ec86d3dc
         </div>
       </div>
     </div>

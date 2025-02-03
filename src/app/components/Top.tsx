@@ -1,7 +1,10 @@
 import React from 'react';
 import TopPicksCard from '../ui/top-picks';
 import UnderlineButton from '../ui/underline-button';
+<<<<<<< HEAD
 import Link from 'next/link';
+=======
+>>>>>>> 1945779e04fb7ccd7a96b89393c72966ec86d3dc
 
 function Top() {
   return (
@@ -23,8 +26,12 @@ function Top() {
         </div>
       </div>
       <div className='flex items-center justify-center mt-10 mb-9'>
+<<<<<<< HEAD
        <Link href="/shop">
        <UnderlineButton>View More</UnderlineButton></Link> 
+=======
+        <UnderlineButton>View More</UnderlineButton>
+>>>>>>> 1945779e04fb7ccd7a96b89393c72966ec86d3dc
       </div>
     </div>
   );

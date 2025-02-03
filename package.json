@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@iconify/react": "^5.1.0",
+<<<<<<< HEAD
     "@sanity/client": "^6.27.2",
     "@sanity/icons": "^3.5.7",
     "@sanity/image-url": "^1.1.0",
@@ -26,6 +27,17 @@
     "sanity": "^3.71.2",
     "stripe": "^17.6.0",
     "styled-components": "^6.1.14"
+=======
+    "@sanity/image-url": "^1.1.0",
+    "@sanity/vision": "^3.68.3",
+    "next": "14.2.2",
+    "next-sanity": "^9.8.30",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.4.0",
+    "sanity": "^3.68.3",
+    "styled-components": "^6.1.13"
+>>>>>>> 1945779e04fb7ccd7a96b89393c72966ec86d3dc
   },
   "devDependencies": {
     "@types/node": "^20",
