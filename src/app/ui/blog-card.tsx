@@ -4,6 +4,7 @@ import { IoMdTime } from "react-icons/io";
 import { CiCalendar } from "react-icons/ci";
 import Image from "next/image";
 import UnderlineButton from "./underline-button";
+import Link from "next/link";
 
 const BlogCard = ({ img = "/default-image.jpg", title = "Default Title", btnName = "Default Button" }) => {
   return (
@@ -17,7 +18,9 @@ const BlogCard = ({ img = "/default-image.jpg", title = "Default Title", btnName
       />
       <h3 className="text-2xl mt-8">{title}</h3>
       <div className="mt-2">
+        <Link href="/blog">
         <UnderlineButton>{btnName}</UnderlineButton>
+        </Link>
       </div>
       <div className="flex items-center space-x-4 mt-2">
         <div className="flex items-center space-x-1">

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import UnderlineButton from "./underline-button";
+import Link from "next/link";
 
 const SideTableCard = ({ img = "/default-image.jpg", title = "Default Title", btnName = "Default Button" }) => {
   return (
@@ -15,7 +16,7 @@ const SideTableCard = ({ img = "/default-image.jpg", title = "Default Title", bt
       />
       <h3 className="text-2xl mt-8">{title}</h3>
       <div className="mt-2">
-        <UnderlineButton>{btnName}</UnderlineButton>
+        <Link href="/shop"><UnderlineButton>{btnName}</UnderlineButton></Link>
       </div>
     </div>
   );

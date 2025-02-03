@@ -3,7 +3,7 @@ import BlogCard from '../ui/blog-card'
 
 function Blog() {
   return (
-    <div className='wrapper flex items-center justify-between bg-[#FFFFFF] px-16 py-16'>
+    <div className='wrapper flex flex-col md:flex-row items-center justify-between bg-[#FFFFFF] px-4 md:px-16 py-16'>
       <div>
         <BlogCard
         img='/9..jpg'

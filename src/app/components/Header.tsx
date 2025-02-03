@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaRegUserCircle, FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";

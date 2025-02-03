@@ -1,5 +1,4 @@
 import React from 'react';
-import { LuSendHorizontal } from "react-icons/lu";
 import UnderlineButton from '../ui/underline-button';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
     // 
     <div className="wrapper bg-white font-poppins">
       {/* Upper Section */}
-      <div className="w-full max-w-[1240px] mx-auto py-8 flex justify-between">
+      <div className="w-full max-w-[1240px] mx-auto py-8 flex flex-col md:flex-row justify-between">
         {/* Address Section */}
         <div className="flex flex-col font-medium justify-center text-sm text-gray-400">
           <p>400 University Drive Suite 200</p>

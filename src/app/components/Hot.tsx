@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 import UnderlineButton from '../ui/underline-button'
+import Link from 'next/link'
 
 function Hot() {
   return (
-    <div className='wrapper flex items-center w-full bg-[#FFF9E5] px-16 py-16 justify-between'>
+    <div className='wrapper flex items-center w-full bg-[#FFF9E5] px-4 md:px-16 py-16 justify-between'>
       <div>
       <Image
           src={"/8..png"}
@@ -20,7 +21,9 @@ function Hot() {
         <h1 className='text-4xl leading-[72px] font-bold text-left'>Asgaard Sofa</h1>
         </div>
         <div className='w-[220px] h-[45px] border border-black pl-9'>
+       <Link href="/assgardsofa">
          <UnderlineButton className='absolute w-[106px] h-[30px] pl-5 pt-3 text-base font-normal leading-[30px]'>Order Now</UnderlineButton>
+         </Link>
       </div>
       </div>
     

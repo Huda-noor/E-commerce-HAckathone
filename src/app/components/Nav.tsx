@@ -3,6 +3,9 @@ import React from "react";
 import { CiHeart } from "react-icons/ci";
 import { FaRegUserCircle, FaSearch } from "react-icons/fa";
 import { IoCartOutline } from "react-icons/io5";
+// import { CiHeart } from "react-icons/ci";
+// import { FaRegUserCircle, FaSearch } from "react-icons/fa";
+// import { IoCartOutline } from "react-icons/io5";
 
 const Header = () => {
   return (

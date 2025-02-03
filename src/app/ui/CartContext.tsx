@@ -1,8 +1,9 @@
-'use client'
+'use client';
+
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 // Type Definitions
-interface CartItem {
+export interface CartItem { // Exporting CartItem
   id: number;
   name: string;
   price: number;
@@ -20,7 +21,6 @@ interface CartContextType {
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
-// Provider
 export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
@@ -61,7 +61,6 @@ export const CartProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   );
 };
 
-// Custom Hook
 export const useCart = () => {
   const context = useContext(CartContext);
   if (!context) {
